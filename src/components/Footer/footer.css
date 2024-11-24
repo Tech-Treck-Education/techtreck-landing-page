@@ -1,0 +1,5 @@
+.footer {
+	display: flex;
+	flex-direction: row;
+	background: linear-gradient(90deg, #000d55 0%, #d11e48 100%);
+}

@@ -1,0 +1,29 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	background-color: #000d55;
+	padding: 100px 0;
+}
+
+.intro {
+	display: flex;
+	flex-direction: row;
+	padding: 50px 30px;
+}
+
+.description {
+	font-size: 40px;
+	text-align: left;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.technology {
+	display: flex;
+	gap: 70px;
+}
