@@ -2,12 +2,13 @@
 	display: flex;
 	flex-direction: column;
 	background-color: #ffffff;
-	padding: 100px 0;
+	padding: 50px 20px;
 }
 
 .descriptionHero {
-	font-size: 24px;
-	padding: 0px 300px;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
 }
 
 .spanHero {
@@ -17,27 +18,134 @@
 .heroImages {
 	display: flex;
 	justify-content: center;
-	gap: 60px;
-	padding: 100px;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding: 50px 20px;
 }
 
 .infoHero {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
-	text-align: left;
+	text-align: center;
+	gap: 20px;
 }
 
 .content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
 }
 
-.titleHero {
-	font-size: 48px;
+.infoHero img {
+	width: 100%;
+	max-width: 300px;
 }
+
+
+.titleHero {
+	font-size: 32px;
+}
+
 .descriptionInfHero {
-	font-size: 18px;
+	font-size: 16px;
+	padding: 10px 20px;
+}
+
+@media (min-width: 768px) {
+	.descriptionHero {
+		font-size: 22px;
+		padding: 0px 150px;
+		text-align: left;
+	}
+
+	.heroImages {
+		gap: 40px;
+	}
+
+	.infoHero {
+		flex-direction: row;
+		justify-content: space-between;
+		text-align: left;
+	}
+
+	.content {
+		align-items: flex-start;
+		text-align: left;
+	}
+
+	.titleHero {
+		font-size: 36px;
+	}
+
+	.descriptionInfHero {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.infoHero {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center; 
+		text-align: center;  
+		gap: 300px; 
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: left;
+		max-width: 450px; 
+	}
+
+	.descriptionHero {
+		font-size: 24px;
+		padding: 0px 200px;
+	}
+
+	.heroImages {
+		gap: 60px;
+	}
+
+	.infoHero img {
+		max-width: 393px;
+	}
+
+	.titleHero {
+		font-size: 48px;
+	}
+
+	.descriptionInfHero {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.hero {
+		padding: 100px 50px;
+	}
+
+	.descriptionHero {
+		font-size: 26px;
+		padding: 0px 300px;
+	}
+
+	.heroImages {
+		gap: 80px;
+	}
+
+	.titleHero {
+		font-size: 56px;
+	}
+
+	.descriptionInfHero {
+		font-size: 22px;
+	}
 }

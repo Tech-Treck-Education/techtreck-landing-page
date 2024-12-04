@@ -1,5 +1,169 @@
 .footer {
-	display: flex;
-	flex-direction: row;
 	background: linear-gradient(90deg, #000d55 0%, #d11e48 100%);
+	height: auto; 
+	padding-bottom: 50px; 
+}
+
+.edit-logo {
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+	text-align: center;
+	gap: 20px;
+	flex-direction: column; 
+	padding: 50px 0;
+}
+
+.text-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.text-content p {
+	max-width: 600px; 
+	line-height: 1.6;
+}
+
+.edit-logo img {
+	max-width: 150px; 
+	height: auto;
+}
+
+.title {
+	font-size: 28px; 
+}
+
+p {
+	font-size: 18px; 
+}
+
+.icons {
+	display: flex;
+	justify-content: center;
+	gap: 40px; 
+	flex-wrap: wrap; 
+	padding: 20px 0;
+}
+
+h3 {
+	font-size: 24px; 
+	text-align: center;
+	padding: 20px 0;
+}
+
+.img-play {
+	display: flex;
+	justify-content: center;
+	gap: 40px; 
+	flex-wrap: wrap; 
+	padding: 20px 0;
+}
+
+.play {
+	width: 150px; 
+	height: auto;
+	border-radius: 10px;
+}
+
+hr {
+	width: 100%; 
+	padding: 1px;
+	background: #ffffffac;
+	border: none;
+}
+
+#footer-p {
+	color: #ffffffac;
+	font-size: 16px; 
+	text-align: center;
+}
+
+.rodaPe {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+	
+	.edit-logo {
+		flex-direction: row; 
+		justify-content: space-between; 
+		text-align: left; 
+	}
+
+	.text-content {
+		align-items: flex-start;
+		text-align: left;
+	}
+
+	.icons {
+		gap: 50px; 
+	}
+
+	h3 {
+		font-size: 30px;
+	}
+
+	.img-play {
+		gap: 70px;
+	}
+
+	.play {
+		width: 200px;
+	}
+
+	.rodaPe {
+		padding-top: 50px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.edit-logo {
+		justify-content: space-evenly; 
+	}
+
+	.text-content {
+		max-width: 600px;
+	}
+
+	.icons {
+		gap: 70px;
+	}
+
+	h3 {
+		font-size: 35px;
+	}
+
+	.play {
+		width: 250px;
+	}
+
+	.rodaPe {
+		padding-top: 80px;
+	}
+}
+
+@media (min-width: 1600px) {
+	
+	.edit-logo {
+		padding: 80px 0;
+	}
+
+	.text-content p {
+		font-size: 20px;
+	}
+
+	.icons {
+		gap: 90px;
+	}
+
+	.play {
+		width: 300px;
+	}
 }

@@ -9,11 +9,14 @@
 	display: flex;
 	flex-direction: row;
 	padding: 50px 30px;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .description {
 	font-size: 40px;
 	text-align: left;
+	color: #fff;
 }
 
 .buttons {
@@ -26,4 +29,67 @@
 .technology {
 	display: flex;
 	gap: 70px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.technology img {
+	width: 50px;
+	height: auto;
+}
+
+@media (max-width: 1200px) {
+	.description {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.intro {
+		flex-direction: column;
+		text-align: center;
+		gap: 30px;
+	}
+
+	.buttons {
+		flex-direction: column;
+		gap: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 50px 20px;
+	}
+
+	.technology img {
+		width: 40px;
+	}
+
+	.technology {
+		gap: 40px;
+	}
+}
+
+@media (max-width: 480px) {
+	.description {
+		font-size: 20px;
+	}
+
+	.technology img {
+		width: 30px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.container {
+		padding: 150px 0;
+	}
+
+	.technology img {
+		width: 70px;
+	}
+
+	.description {
+		font-size: 50px;
+	}
 }
